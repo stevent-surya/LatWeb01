@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout dengan Tabel</title>
+    <style>
+        /* CSS opsional untuk memberikan warna dan padding seperti di gambar */
+        body {
+            font-family: sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Menghilangkan spasi antar sel */
+            border: 2px solid orange;
+        }
+        td, th {
+            padding: 15px;
+            text-align: left;
+            vertical-align: top;
+        }
+        header, nav, footer {
+            text-align: center;
+        }
+        .header-color {
+            background-color: #ffe8cc;
+        }
+        .nav-color {
+            background-color: #dbe5ff;
+        }
+        .main-content-color {
+            background-color: #ffcccc;
+        }
+        .sidebar-color {
+            background-color: #d9ead3;
+        }
+        .footer-color {
+            background-color: #ffe8cc;
+        }
+    </style>
+</head>
+<body>
+
+    <table border="1">
+        <tr class="header-color">
+            <td colspan="2">
+                <header>
+                    HEADER
+                </header>
+            </td>
+        </tr>
+
+        <tr class="nav-color">
+            <td colspan="2">
+                <nav>
+                    NAVIGASI
+                </nav>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="main-content-color" style="width: 75%;">
+                <main>
+                    <h1>Heading 1</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </main>
+            </td>
+
+            <td class="sidebar-color" style="width: 25%;">
+                <aside>
+                    <b>Menu:</b>
+                    <ul>
+                        <li>Home</li>
+                        <li>Berita</li>
+                        <li>Layanan</li>
+                        <li>Kontak</li>
+                    </ul>
+                </aside>
+            </td>
+        </tr>
+
+        <tr class="footer-color">
+            <td colspan="2">
+                <footer>
+                    FOOTER
+                </footer>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
